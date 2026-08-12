@@ -1,0 +1,15 @@
+node_modules/
+dist/
+*.log
+.DS_Store
+.agents/
+.AGENTS.md
+.CLAUDE.md
+.claude.md
+.CLAUDE.md
+.clauderules
+.agentrules
+
+# Generated at build time by scripts/make-icons.mjs — not committed so no
+# binary assets need to live in version control.
+public/icons/*.png
