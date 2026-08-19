@@ -2,12 +2,7 @@
 
 **The Breaking API Sentinel**
 
-A Chromium-based DevTools panel extension that watches the API traffic your app
-actually makes, learns a lightweight schema per endpoint from what it
-observes, and flags the moment a response's shape changes — new fields,
-removed fields, type changes, or fields that suddenly went `null`. Built for
-developers and QA who are tired of discovering backend contract breakage by
-debugging a broken UI instead of by reading a diff log.
+A Chromium-based DevTools panel extension that watches the API traffic your app actually makes, learns a lightweight schema per endpoint from what it observes, and flags the moment a response's shape changes — new fields, removed fields, type changes, or fields that suddenly went `null`. Built for developers and QA who are tired of discovering backend contract breakage by debugging a broken UI instead of by reading a diff log.
 
 ## Why a DevTools panel, not a background extension
 
@@ -95,7 +90,7 @@ Load it in Chrome:
 `npm run dev` runs the same build in `--watch` mode; reload the unpacked
 extension in `chrome://extensions` after each rebuild.
 
-## Project structure
+<!-- ## Project structure
 
 ```
 src/
@@ -107,4 +102,4 @@ src/
 manifest.json Manifest V3, devtools_page-only (no background service worker —
               nothing here needs cross-context coordination beyond what
               chrome.storage.onChanged already provides for free)
-```
+``` -->
