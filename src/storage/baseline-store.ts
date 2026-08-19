@@ -135,6 +135,11 @@ export function resetBaseline(state: SchemaWatchState, endpointKey: string): Sch
   return { ...state, endpoints: remaining };
 }
 
+/** Forgets every endpoint baseline while preserving user path overrides. */
+export function clearBaselines(state: SchemaWatchState): SchemaWatchState {
+  return { ...state, endpoints: {} };
+}
+
 export function setPathOverride(
   state: SchemaWatchState,
   overrideKey: string,
