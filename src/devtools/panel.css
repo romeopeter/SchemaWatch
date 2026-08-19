@@ -43,10 +43,22 @@ body {
 .toolbar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   padding: 8px 12px;
   border-bottom: 1px solid var(--border);
   background: var(--bg-alt);
+}
+
+.toolbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.toolbar-brand-icon {
+  width: 16px;
+  height: 16px;
+  flex: 0 0 16px;
 }
 
 .toolbar h1 {
@@ -55,10 +67,46 @@ body {
   font-weight: 600;
 }
 
+.toolbar-utility-panel {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: 10px;
+  padding-left: 10px;
+  border-left: 1px solid var(--border);
+}
+
 .toolbar-actions {
   display: flex;
   align-items: center;
   gap: 8px;
+  margin-left: auto;
+}
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background: transparent;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.icon-btn:hover {
+  border-color: var(--border);
+  background: var(--bg);
+  color: var(--breaking);
+}
+
+.icon-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
 }
 
 .status-msg {
@@ -123,7 +171,7 @@ body {
 }
 
 .status-dot-learning {
-  background: #9aa0a6;
+  background: var(--ambiguous);
 }
 
 .status-dot-stable {
@@ -177,8 +225,8 @@ body {
 }
 
 .status-pill-learning {
-  background: var(--bg-alt);
-  color: var(--text-muted);
+  background: var(--ambiguous-bg);
+  color: var(--ambiguous);
 }
 
 .status-pill-stable {
